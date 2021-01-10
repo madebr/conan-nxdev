@@ -1,0 +1,4 @@
+sources:
+  "4.0.0":
+    url: "https://github.com/switchbrew/libnx/archive/v4.0.0.tar.gz"
+    sha256: "2d8ba11a2e9356317cf1fce4d7bab82b526bc1a02b1a71fe0b09e91ec4db995f"

@@ -1,0 +1,6 @@
+engine Uart 0x8000;
+
+0x000 usart_sr bits (
+    1 FramingError bool;
+    0 ParitiyError bool;
+);

@@ -1,0 +1,4 @@
+sources:
+  "1.0.3":
+    url: "https://github.com/devkitPro/general-tools/releases/download/v1.0.3/general-tools-1.0.3.tar.xz"
+    sha256: "81d406431def562a95c40b22fa7cdd40d2b8758b8f683bb0df8b05f1b41d5b90"

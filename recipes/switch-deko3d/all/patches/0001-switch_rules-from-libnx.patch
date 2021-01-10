@@ -1,0 +1,11 @@
+--- Makefile
++++ Makefile
+@@ -6,7 +6,7 @@
+ $(error "Please set DEVKITPRO in your environment. export DEVKITPRO=<path to>/devkitpro")
+ endif
+ 
+-include $(DEVKITPRO)/libnx/switch_rules
++include $(LIBNX)/libnx/switch_rules
+ 
+ export DEKO3D_MAJOR	:= 0
+ export DEKO3D_MINOR	:= 3

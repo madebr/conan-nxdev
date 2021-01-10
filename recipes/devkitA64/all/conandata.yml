@@ -1,0 +1,13 @@
+sources:
+  "38":
+    - url: "https://github.com/devkitPro/buildscripts/archive/devkitPPC_r38.tar.gz"
+      sha256: "0e9c7b5c7526187f027849da0a849b76b12b48a9ca409d4e7c579bdfee2b134c"
+    - url: "https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.gz"
+      sha256: "27e879dccc639cd7b0cc08ed575c1669492579529b53c9ff27b0b96265fa867d"
+    - url: "https://ftp.gnu.org/gnu/binutils/binutils-2.32.tar.xz"
+      sha256: "0ab6c55dd86a92ed561972ba15b9b70a8b9f75557f896446c82e8b36e473ee04"
+    - url: "http://mirrors.kernel.org/sourceware/newlib/newlib-3.3.0.tar.gz"
+      sha256: "58dd9e3eaedf519360d92d84205c3deef0b3fc286685d1c562e245914ef72c66"
+#    - url: "https://github.com/devkitPro/newlib/archive/4914c426c7494ada0f93955dcaa1dbf4694e534f.tar.gz"
+#      sha256: "8a09f38bb62587ddf619e7187864d096c21a828bb9efe5609ea4c861a6f2f472"
+

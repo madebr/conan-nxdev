@@ -1,0 +1,9 @@
+from conans import ConanFile, tools
+
+
+class TestPackageConan(ConanFile):
+    settings = "os", "arch"
+
+    def test(self):
+        if not tools.cross_building(self):
+            self.run("bin2s -h", run_environment=True)

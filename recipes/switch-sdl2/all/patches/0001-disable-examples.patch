@@ -1,0 +1,33 @@
+--- CMakeLists.switch
++++ CMakeLists.switch
+@@ -1,6 +1,6 @@
+ cmake_minimum_required(VERSION 3.0)
+ #set(CMAKE_VERBOSE_MAKEFILE ON)
+-
++if(0)
+ set(CMAKE_SYSTEM_NAME "Generic")
+ 
+ set(DEVKITPRO $ENV{DEVKITPRO})
+@@ -18,7 +18,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+ set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
+ set(BUILD_SHARED_LIBS OFF CACHE INTERNAL "Shared libs not available")
+-
++endif()
+ project(SDL2)
+ 
+ set(SRC_DIRS
+@@ -67,7 +67,7 @@ add_library(${PROJECT_NAME} STATIC ${SRC_FILES})
+ target_include_directories(${PROJECT_NAME} PUBLIC ${SRC_DIRS} include)
+ target_compile_options(${PROJECT_NAME} PUBLIC -O3 -D__SWITCH__ -DSDL_VIDEO_STATIC_ANGLE)
+ 
+-# SDL2 test
++if(0)# SDL2 test
+ add_executable(${PROJECT_NAME}.elf test/testswitch.c)
+ target_include_directories(${PROJECT_NAME}.elf PRIVATE include)
+ target_compile_options(${PROJECT_NAME}.elf PRIVATE -O3 -D__SWITCH__)
+@@ -84,3 +84,4 @@ set_target_properties(${PROJECT_NAME}.elf PROPERTIES LINK_FLAGS "-specs=${DEVKIT
+ add_custom_target(${PROJECT_NAME}.nro
+         DEPENDS ${PROJECT_NAME}.elf
+         COMMAND elf2nro ${PROJECT_NAME}.elf ${PROJECT_NAME}.nro)
++endif()

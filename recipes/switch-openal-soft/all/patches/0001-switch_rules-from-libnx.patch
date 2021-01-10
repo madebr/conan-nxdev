@@ -1,0 +1,5 @@
+--- Makefile.nx
++++ Makefile.nx
+@@ -10,1 +10,1 @@
+-include $(DEVKITPRO)/libnx/switch_rules
++include $(LIBNX)/libnx/switch_rules

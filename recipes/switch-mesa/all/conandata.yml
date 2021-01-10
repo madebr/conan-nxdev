@@ -1,0 +1,10 @@
+sources:
+  "20.1.0-rc3":
+    - url: "https://mesa.freedesktop.org/archive/mesa-20.1.0-rc3.tar.xz"
+      sha256: "c90b75ea34302ebde9b81b87c5642fa864c40fe9c4ad34ce0793170c1413168d"
+    - url: "https://raw.githubusercontent.com/devkitPro/pacman-packages/b392f4648746a13e0563f1fb5011f82eedff88fa/switch/mesa/switch-mesa-20.1.0-1.patch"
+      sha256: "950f93d3e5b6ae9c5a42c2918623fe9a80d7ee398d92d2e73abec86b62d75916"
+patches:
+  "20.1.0-rc3":
+    - patch_file: "switch-mesa-20.1.0-1.patch"
+      base_path: "source_subfolder"

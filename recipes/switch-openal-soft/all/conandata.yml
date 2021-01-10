@@ -1,0 +1,8 @@
+sources:
+  "git.20200512":
+    url: "https://github.com/fgsfdsfgs/openal-soft/archive/f7c8022eb6c5b7640d80822d00b5c506942ef260.tar.gz"
+    sha256: "f7b67deb57aea6cd275e0cf42a027d857df2b01f69864fa8826a0e2bbfaea6fa"
+patches:
+  "git.20200512":
+    - patch_file: "patches/0001-switch_rules-from-libnx.patch"
+      base_path: "source_subfolder"

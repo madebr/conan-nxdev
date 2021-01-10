@@ -1,0 +1,11 @@
+sources:
+  "2.0.12":
+    - url: "https://www.libsdl.org/release/SDL2-2.0.12.tar.gz"
+      sha256: "349268f695c02efbc9b9148a70b85e58cefbbf704abd3e91be654db7f1e2c863"
+    - url: "https://github.com/devkitPro/pacman-packages/raw/c6942378fdee643006d75f4f4ab338271aabcde6/switch/SDL2/SDL2-2.0.12.patch"
+      sha256: "b5bf129b9218f04632babbb32b4f74c2167df369646b94c5ff7e1aed4c38df85"
+patches:
+  "2.0.12":
+    - patch_file: "SDL2-2.0.12.patch"
+      base_path: "source_subfolder"
+
